@@ -7,19 +7,19 @@
     <title>শিল্প মন্ত্রণালয়ের ই-লাইব্রেরি</title>
     <style>
       body {
-        height: 100vh;
-        overflow: hidden;
+        /* height: 100vh; */
+        overflow-x: hidden;
       }
 
       .flex {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        /* height: 100vh; */
         width: 100%;
         text-align: center;
         font-size: 28px;
-        position: absolute;
+        /* position: absolute; */
         top: 0;
         left: 0;
         z-index: 100;
@@ -42,6 +42,7 @@
         border-radius: 10px;
         transition: all 0.3s;
         cursor: pointer;
+        margin-bottom: 30px;
       }
       button:active {
         transform: scale(0.9);
@@ -164,7 +165,7 @@
         display: block;
       }
       .logo {
-        position: absolute;
+        /* position: absolute; */
         display: flex;
         justify-content: center;
         width: 100%;
@@ -172,6 +173,7 @@
         left: 0;
         padding-top: 40px;
         z-index: 100;
+        margin-bottom: 20px;
       }
       .website-logo {
         display: flex;
@@ -182,6 +184,11 @@
         width: 100%;
         margin-bottom: 30px;
       }
+      .imgWrap {
+        display: flex;
+        gap: 20px;
+      }
+      .imgWrap img {}
     </style>
   </head>
   <body>
@@ -211,13 +218,17 @@
     </div>
     <div class="flex item-center juCenter">
       <div class="content">
-        <div class="">
-          <img src="./logo//eLimg.jpg" alt="eLimg.jpg">
+        <div class="imgWrap">
+          <div class=""><img src="./logo/1.jpg" alt="eLimg.jpg"></div>
+          <div class=""><img src="./logo/2.jpg" alt="eLimg.jpg"></div>
         </div>
         <div class="text">
           শিল্প মন্ত্রণালয়ের ই-লাইব্রেরি সফটওয়্যারের শুভ উদ্বোধন
         </div>
         <button onclick="myFunction()">ক্লিক করুন</button>
+        <div class="">
+          <img src="./logo//eLimg.jpg" alt="eLimg.jpg">
+        </div>
       </div>
     </div>
     <div class="" id="myDIV">
